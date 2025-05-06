@@ -3,9 +3,14 @@ import 'package:provider/provider.dart';
 import '../../../services/language_service.dart';
 import 'exercise_cards_screen.dart';
 import 'writing_exercise_screen.dart';
-import 'english_vocabulary_screen.dart';
 import 'english_writing_screen.dart';
-import 'vocabulary_exercise_screen.dart';
+import 'french_writing_screen.dart';
+import 'german_writing_screen.dart';
+import 'italian_writing_screen.dart';
+import 'english_vocabulary_screen.dart';
+import 'french_vocabulary_screen.dart';
+import 'german_vocabulary_screen.dart';
+import 'italian_vocabulary_screen.dart';
 
 class DailyExercisesScreen extends StatelessWidget {
   const DailyExercisesScreen({super.key});
@@ -101,7 +106,28 @@ class DailyExercisesScreen extends StatelessWidget {
                       if (language == 'Japonés') {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (context) => const ExerciseCardsScreen(),
+                            builder: (context) => ExerciseCardsScreen(
+                              vocabulary: _getVocabularyExercises('Japonés'),
+                              language: 'Japonés',
+                            ),
+                          ),
+                        );
+                      } else if (language == 'Francés') {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const FrenchVocabularyScreen(),
+                          ),
+                        );
+                      } else if (language == 'Alemán') {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const GermanVocabularyScreen(),
+                          ),
+                        );
+                      } else if (language == 'Italiano') {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const ItalianVocabularyScreen(),
                           ),
                         );
                       } else {
@@ -140,6 +166,24 @@ class DailyExercisesScreen extends StatelessWidget {
                             builder: (context) => const WritingExerciseScreen(),
                           ),
                         );
+                      } else if (language == 'Francés') {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const FrenchWritingScreen(),
+                          ),
+                        );
+                      } else if (language == 'Alemán') {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const GermanWritingScreen(),
+                          ),
+                        );
+                      } else if (language == 'Italiano') {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const ItalianWritingScreen(),
+                          ),
+                        );
                       } else {
                         Navigator.of(context).push(
                           MaterialPageRoute(
@@ -156,13 +200,9 @@ class DailyExercisesScreen extends StatelessWidget {
                     Colors.purple,
                     0.0,
                     onTap: () {
-                      final language = context.read<LanguageService>().selectedLanguage;
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => VocabularyExerciseScreen(
-                            exercises: _getVocabularyExercises(language),
-                            language: language,
-                          ),
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text('Ejercicios de comprensión próximamente'),
                         ),
                       );
                     },
@@ -326,33 +366,72 @@ class DailyExercisesScreen extends StatelessWidget {
   }
 
   List<Map<String, String>> _getVocabularyExercises(String language) {
-    if (language == 'Inglés') {
-      return [
-        {'word': 'Hello', 'translation': 'Hola'},
-        {'word': 'Goodbye', 'translation': 'Adiós'},
-        {'word': 'Thank you', 'translation': 'Gracias'},
-        {'word': 'Please', 'translation': 'Por favor'},
-        {'word': 'Friend', 'translation': 'Amigo'},
-        {'word': 'Family', 'translation': 'Familia'},
-        {'word': 'Love', 'translation': 'Amor'},
-        {'word': 'Time', 'translation': 'Tiempo'},
-        {'word': 'Food', 'translation': 'Comida'},
-        {'word': 'Water', 'translation': 'Agua'},
-      ];
-    } else if (language == 'Japonés') {
-      return [
-        {'word': 'こんにちは', 'translation': 'Hola'},
-        {'word': 'さようなら', 'translation': 'Adiós'},
-        {'word': 'ありがとう', 'translation': 'Gracias'},
-        {'word': 'お願いします', 'translation': 'Por favor'},
-        {'word': '友達', 'translation': 'Amigo'},
-        {'word': '家族', 'translation': 'Familia'},
-        {'word': '愛', 'translation': 'Amor'},
-        {'word': '食べ物', 'translation': 'Comida'},
-        {'word': '水', 'translation': 'Agua'},
-        {'word': '時間', 'translation': 'Tiempo'},
-      ];
+    switch (language) {
+      case 'Inglés':
+        return [
+          {'word': 'Hello', 'translation': 'Hola', 'pronunciation': 'he-LOU'},
+          {'word': 'Goodbye', 'translation': 'Adiós', 'pronunciation': 'gud-BAI'},
+          {'word': 'Thank you', 'translation': 'Gracias', 'pronunciation': 'zank-IU'},
+          {'word': 'Please', 'translation': 'Por favor', 'pronunciation': 'pli:z'},
+          {'word': 'Friend', 'translation': 'Amigo', 'pronunciation': 'frend'},
+          {'word': 'Family', 'translation': 'Familia', 'pronunciation': 'FA-mi-li'},
+          {'word': 'Love', 'translation': 'Amor', 'pronunciation': 'lav'},
+          {'word': 'Food', 'translation': 'Comida', 'pronunciation': 'fu:d'},
+          {'word': 'Water', 'translation': 'Agua', 'pronunciation': 'WO-ter'},
+          {'word': 'Time', 'translation': 'Tiempo', 'pronunciation': 'taim'},
+        ];
+      case 'Francés':
+        return [
+          {'word': 'Bonjour', 'translation': 'Hola', 'pronunciation': 'bon-ZHUR'},
+          {'word': 'Au revoir', 'translation': 'Adiós', 'pronunciation': 'o-re-VUAR'},
+          {'word': 'Merci', 'translation': 'Gracias', 'pronunciation': 'mer-SI'},
+          {'word': "S'il vous plaît", 'translation': 'Por favor', 'pronunciation': 'sil-vu-PLE'},
+          {'word': 'Ami', 'translation': 'Amigo', 'pronunciation': 'a-MI'},
+          {'word': 'Famille', 'translation': 'Familia', 'pronunciation': 'fa-MI-ye'},
+          {'word': 'Amour', 'translation': 'Amor', 'pronunciation': 'a-MUR'},
+          {'word': 'Nourriture', 'translation': 'Comida', 'pronunciation': 'nu-ri-TUR'},
+          {'word': 'Eau', 'translation': 'Agua', 'pronunciation': 'O'},
+          {'word': 'Temps', 'translation': 'Tiempo', 'pronunciation': 'tan'},
+        ];
+      case 'Alemán':
+        return [
+          {'word': 'Hallo', 'translation': 'Hola', 'pronunciation': 'HA-lo'},
+          {'word': 'Auf Wiedersehen', 'translation': 'Adiós', 'pronunciation': 'auf-VI-der-zen'},
+          {'word': 'Danke', 'translation': 'Gracias', 'pronunciation': 'DAN-ke'},
+          {'word': 'Bitte', 'translation': 'Por favor', 'pronunciation': 'BI-te'},
+          {'word': 'Freund', 'translation': 'Amigo', 'pronunciation': 'froint'},
+          {'word': 'Familie', 'translation': 'Familia', 'pronunciation': 'fa-MI-lie'},
+          {'word': 'Liebe', 'translation': 'Amor', 'pronunciation': 'LI-be'},
+          {'word': 'Essen', 'translation': 'Comida', 'pronunciation': 'E-sen'},
+          {'word': 'Wasser', 'translation': 'Agua', 'pronunciation': 'VA-ser'},
+          {'word': 'Zeit', 'translation': 'Tiempo', 'pronunciation': 'tsait'},
+        ];
+      case 'Italiano':
+        return [
+          {'word': 'Ciao', 'translation': 'Hola', 'pronunciation': 'CHAO'},
+          {'word': 'Arrivederci', 'translation': 'Adiós', 'pronunciation': 'a-ri-ve-DER-chi'},
+          {'word': 'Grazie', 'translation': 'Gracias', 'pronunciation': 'GRA-tsie'},
+          {'word': 'Per favore', 'translation': 'Por favor', 'pronunciation': 'per fa-VO-re'},
+          {'word': 'Amico', 'translation': 'Amigo', 'pronunciation': 'a-MI-ko'},
+          {'word': 'Famiglia', 'translation': 'Familia', 'pronunciation': 'fa-MI-lia'},
+          {'word': 'Amore', 'translation': 'Amor', 'pronunciation': 'a-MO-re'},
+          {'word': 'Cibo', 'translation': 'Comida', 'pronunciation': 'CHI-bo'},
+          {'word': 'Acqua', 'translation': 'Agua', 'pronunciation': 'A-kua'},
+          {'word': 'Tempo', 'translation': 'Tiempo', 'pronunciation': 'TEM-po'},
+        ];
+      default: // Japonés
+        return [
+          {'word': 'こんにちは', 'translation': 'Hola', 'pronunciation': 'Konnichiwa'},
+          {'word': 'さようなら', 'translation': 'Adiós', 'pronunciation': 'Sayounara'},
+          {'word': 'ありがとう', 'translation': 'Gracias', 'pronunciation': 'Arigatou'},
+          {'word': 'お願いします', 'translation': 'Por favor', 'pronunciation': 'Onegaishimasu'},
+          {'word': '友達', 'translation': 'Amigo', 'pronunciation': 'Tomodachi'},
+          {'word': '家族', 'translation': 'Familia', 'pronunciation': 'Kazoku'},
+          {'word': '愛', 'translation': 'Amor', 'pronunciation': 'Ai'},
+          {'word': '食べ物', 'translation': 'Comida', 'pronunciation': 'Tabemono'},
+          {'word': '水', 'translation': 'Agua', 'pronunciation': 'Mizu'},
+          {'word': '時間', 'translation': 'Tiempo', 'pronunciation': 'Jikan'},
+        ];
     }
-    return [];
   }
 }

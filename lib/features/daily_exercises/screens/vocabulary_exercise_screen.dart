@@ -36,7 +36,6 @@ class _VocabularyExerciseScreenState extends State<VocabularyExerciseScreen> {
             minHeight: 10,
           ),
           
-          // Contador de tarjetas
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
@@ -45,10 +44,10 @@ class _VocabularyExerciseScreenState extends State<VocabularyExerciseScreen> {
             ),
           ),
 
-          // Tarjeta de vocabulario
+          // Espacio para la tarjeta
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: GestureDetector(
                 onTap: () {
                   setState(() {
@@ -56,7 +55,7 @@ class _VocabularyExerciseScreenState extends State<VocabularyExerciseScreen> {
                   });
                 },
                 child: Card(
-                  color: Colors.blue,
+                  color: showAnswer ? Colors.green : Colors.blue,
                   child: Center(
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
@@ -64,7 +63,7 @@ class _VocabularyExerciseScreenState extends State<VocabularyExerciseScreen> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Text(
-                            '¿Qué significa?',
+                            showAnswer ? 'Significado' : '¿Qué significa?',
                             style: TextStyle(
                               color: Colors.white.withOpacity(0.8),
                               fontSize: 16,
@@ -82,6 +81,24 @@ class _VocabularyExerciseScreenState extends State<VocabularyExerciseScreen> {
                             ),
                             textAlign: TextAlign.center,
                           ),
+                          if (showAnswer) ...[
+                            const SizedBox(height: 20),
+                            Text(
+                              'Pronunciación',
+                              style: TextStyle(
+                                color: Colors.white.withOpacity(0.8),
+                                fontSize: 16,
+                              ),
+                            ),
+                            Text(
+                              widget.exercises[currentIndex]['pronunciation']!,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 24,
+                                fontStyle: FontStyle.italic,
+                              ),
+                            ),
+                          ],
                           const SizedBox(height: 20),
                           Icon(
                             Icons.touch_app,
@@ -89,7 +106,7 @@ class _VocabularyExerciseScreenState extends State<VocabularyExerciseScreen> {
                             size: 30,
                           ),
                           Text(
-                            'Toca para ver la respuesta',
+                            showAnswer ? 'Toca para volver' : 'Toca para ver la respuesta',
                             style: TextStyle(
                               color: Colors.white.withOpacity(0.8),
                             ),

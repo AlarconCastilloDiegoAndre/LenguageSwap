@@ -1,37 +1,56 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+class ExerciseCard {
+  final String question;
+  final String answer;
+  final String pronunciation;
+  bool isFlipped;
+  
+  ExerciseCard({
+    required this.question,
+    required this.answer,
+    required this.pronunciation,
+    this.isFlipped = false,
+  });
+}
+
 class ExerciseCardsScreen extends StatefulWidget {
-  const ExerciseCardsScreen({super.key});
+  final List<Map<String, String>> vocabulary;
+  final String language;
+
+  const ExerciseCardsScreen({
+    super.key,
+    required this.vocabulary,
+    required this.language,
+  });
 
   @override
   State<ExerciseCardsScreen> createState() => _ExerciseCardsScreenState();
 }
 
 class _ExerciseCardsScreenState extends State<ExerciseCardsScreen> {
-  final List<ExerciseCard> _cards = [
-    ExerciseCard(question: 'こんにちは', answer: 'Hola', pronunciation: 'Konnichiwa'),
-    ExerciseCard(question: 'ありがとう', answer: 'Gracias', pronunciation: 'Arigatou'),
-    ExerciseCard(question: 'お願いします', answer: 'Por favor', pronunciation: 'Onegaishimasu'),
-    ExerciseCard(question: 'さようなら', answer: 'Adiós', pronunciation: 'Sayounara'),
-    ExerciseCard(question: 'はい', answer: 'Sí', pronunciation: 'Hai'),
-    ExerciseCard(question: 'いいえ', answer: 'No', pronunciation: 'Iie'),
-    ExerciseCard(question: 'おはよう', answer: 'Buenos días', pronunciation: 'Ohayou'),
-    ExerciseCard(question: 'こんばんは', answer: 'Buenas noches', pronunciation: 'Konbanwa'),
-    ExerciseCard(question: 'すみません', answer: 'Disculpe', pronunciation: 'Sumimasen'),
-    ExerciseCard(question: 'わかりません', answer: 'No entiendo', pronunciation: 'Wakarimasen'),
-  ];
-  
+  late List<ExerciseCard> _cards;
   int _currentCardIndex = 0;
   int _correctAnswers = 0;
   bool _isExerciseComplete = false;
 
   @override
+  void initState() {
+    super.initState();
+    _cards = widget.vocabulary.map((item) => ExerciseCard(
+      question: item['word']!,
+      answer: item['translation']!,
+      pronunciation: item['pronunciation']!,
+    )).toList();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Ejercicio de Vocabulario'),
-        backgroundColor: Theme.of(context).colorScheme.primary,
+        title: Text('Vocabulario en ${widget.language}'),
+        backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
       body: _isExerciseComplete 
@@ -45,107 +64,88 @@ class _ExerciseCardsScreenState extends State<ExerciseCardsScreen> {
       padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
-          // Progreso
           LinearProgressIndicator(
-            value: (_currentCardIndex + 1) / _cards.length,
+            value: (_currentCardIndex + 1) / widget.vocabulary.length,
             backgroundColor: Colors.grey[300],
-            valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+            valueColor: const AlwaysStoppedAnimation<Color>(Colors.blue),
             minHeight: 10,
             borderRadius: BorderRadius.circular(5),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8.0),
             child: Text(
-              'Tarjeta ${_currentCardIndex + 1} de ${_cards.length}',
+              'Tarjeta ${_currentCardIndex + 1} de ${widget.vocabulary.length}',
               style: const TextStyle(fontSize: 16),
             ),
           ),
           const SizedBox(height: 16),
           
-          // Tarjeta actual
           Expanded(
             child: Center(
               child: FlipCard(
                 card: _cards[_currentCardIndex],
-                onFlip: () {
-                  // Opcional: realizar alguna acción cuando la tarjeta se voltea
-                },
+                onFlip: () {},
               ),
             ),
           ),
           
-          // Botones de navegación
           const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              SizedBox(
-                width: 100,
-                child: ElevatedButton.icon(
-                  onPressed: () {
-                    if (_currentCardIndex > 0) {
-                      setState(() {
-                        _currentCardIndex--;
-                        // Aseguramos que la tarjeta esté en su estado inicial
-                        _cards[_currentCardIndex].isFlipped = false;
-                      });
+              ElevatedButton.icon(
+                onPressed: _currentCardIndex > 0
+                    ? () {
+                        setState(() {
+                          _currentCardIndex--;
+                          _cards[_currentCardIndex].isFlipped = false;
+                        });
+                      }
+                    : null,
+                icon: const Icon(Icons.arrow_back),
+                label: const Text('Anterior'),
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                ),
+              ),
+              ElevatedButton.icon(
+                onPressed: () {
+                  setState(() {
+                    if (_currentCardIndex < _cards.length - 1) {
+                      _currentCardIndex++;
+                      _correctAnswers++;
+                      _cards[_currentCardIndex].isFlipped = false;
+                    } else {
+                      _correctAnswers++;
+                      _isExerciseComplete = true;
                     }
-                  },
-                  icon: const Icon(Icons.arrow_back),
-                  label: const Text('Anterior'),
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-                  ),
+                  });
+                },
+                icon: const Icon(Icons.check),
+                label: const Text('Correcto'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 ),
               ),
-              const SizedBox(width: 8),
-              SizedBox(
-                width: 100,
-                child: ElevatedButton.icon(
-                  onPressed: () {
-                    setState(() {
-                      if (_currentCardIndex < _cards.length - 1) {
-                        _currentCardIndex++;
-                        _correctAnswers++;
-                        // Aseguramos que la tarjeta esté en su estado inicial
-                        _cards[_currentCardIndex].isFlipped = false;
-                      } else {
-                        _correctAnswers++;
-                        _isExerciseComplete = true;
-                      }
-                    });
-                  },
-                  icon: const Icon(Icons.check),
-                  label: const Text('Correcto'),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-                  ),
-                ),
-              ),
-              const SizedBox(width: 8),
-              SizedBox(
-                width: 110,
-                child: ElevatedButton.icon(
-                  onPressed: () {
-                    setState(() {
-                      if (_currentCardIndex < _cards.length - 1) {
-                        _currentCardIndex++;
-                        // Aseguramos que la tarjeta esté en su estado inicial
-                        _cards[_currentCardIndex].isFlipped = false;
-                      } else {
-                        _isExerciseComplete = true;
-                      }
-                    });
-                  },
-                  icon: const Icon(Icons.close),
-                  label: const Text('Incorrecto'),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.red,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-                  ),
+              ElevatedButton.icon(
+                onPressed: () {
+                  setState(() {
+                    if (_currentCardIndex < _cards.length - 1) {
+                      _currentCardIndex++;
+                      _cards[_currentCardIndex].isFlipped = false;
+                    } else {
+                      _isExerciseComplete = true;
+                    }
+                  });
+                },
+                icon: const Icon(Icons.close),
+                label: const Text('Incorrecto'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 ),
               ),
             ],
@@ -156,7 +156,7 @@ class _ExerciseCardsScreenState extends State<ExerciseCardsScreen> {
   }
   
   Widget _buildResultScreen() {
-    final percentage = (_correctAnswers / _cards.length) * 100;
+    final percentage = (_correctAnswers / widget.vocabulary.length) * 100;
     
     return Center(
       child: Padding(
@@ -179,7 +179,7 @@ class _ExerciseCardsScreenState extends State<ExerciseCardsScreen> {
             ),
             const SizedBox(height: 16),
             Text(
-              'Has respondido correctamente $_correctAnswers de ${_cards.length} tarjetas',
+              'Has respondido correctamente $_correctAnswers de ${widget.vocabulary.length} tarjetas',
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 18),
             ),
@@ -210,8 +210,6 @@ class _ExerciseCardsScreenState extends State<ExerciseCardsScreen> {
                   _currentCardIndex = 0;
                   _correctAnswers = 0;
                   _isExerciseComplete = false;
-                  
-                  // Reiniciar todas las tarjetas
                   for (var card in _cards) {
                     card.isFlipped = false;
                   }
@@ -456,18 +454,4 @@ class _FlipCardState extends State<FlipCard> with SingleTickerProviderStateMixin
       ),
     );
   }
-}
-
-class ExerciseCard {
-  final String question;
-  final String answer;
-  final String pronunciation;
-  bool isFlipped;
-  
-  ExerciseCard({
-    required this.question,
-    required this.answer,
-    required this.pronunciation,
-    this.isFlipped = false,
-  });
 }
