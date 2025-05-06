@@ -1,0 +1,54 @@
+{
+  "exercises": [
+    {
+      "prompt": "Traduce: \"Buenos días\"",
+      "answer": "Buongiorno",
+      "hint": "Es una palabra compuesta: buon (bueno) + giorno (día)"
+    },
+    {
+      "prompt": "Completa: \"Come ___ chiami?\" (¿Cómo te llamas?)",
+      "answer": "ti",
+      "hint": "Se necesita el pronombre reflexivo de segunda persona singular"
+    },
+    {
+      "prompt": "Traduce: \"Mucho gusto\"",
+      "answer": "Piacere",
+      "hint": "Es una forma común de decir 'encantado/a' al conocer a alguien"
+    },
+    {
+      "prompt": "Escribe: \"¿De dónde eres?\"",
+      "answer": "Di dove sei?",
+      "hint": "La estructura es: Di (de) + dove (dónde) + sei (eres)"
+    },
+    {
+      "prompt": "Completa: \"Io ___ italiano\" (Yo hablo italiano)",
+      "answer": "parlo",
+      "hint": "Es el verbo 'parlare' (hablar) conjugado en primera persona singular"
+    },
+    {
+      "prompt": "Traduce: \"Gracias\"",
+      "answer": "Grazie",
+      "hint": "Una de las palabras más importantes para ser cortés"
+    },
+    {
+      "prompt": "Escribe: \"¿Cuántos años tienes?\"",
+      "answer": "Quanti anni hai?",
+      "hint": "La estructura es: Quanti (cuántos) + anni (años) + hai (tienes)"
+    },
+    {
+      "prompt": "Completa: \"Mi piace ___ pizza\" (Me gusta la pizza)",
+      "answer": "la",
+      "hint": "Se necesita el artículo determinado femenino singular"
+    },
+    {
+      "prompt": "Traduce: \"Hasta luego\"",
+      "answer": "Arrivederci",
+      "hint": "Una forma formal de despedirse"
+    },
+    {
+      "prompt": "Escribe: \"¿Dónde está el restaurante?\"",
+      "answer": "Dov'è il ristorante?",
+      "hint": "La estructura es: Dov'è (dónde está) + il (el) + ristorante (restaurante)"
+    }
+  ]
+}

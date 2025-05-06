@@ -1,0 +1,112 @@
+[
+  {
+    "id": "de1",
+    "title": "Meine Vorstellung",
+    "prompt": "Schreibe eine kurze Vorstellung über dich selbst auf Deutsch. Füge deinen Namen, dein Alter, deine Nationalität, deinen Beruf und deine Hobbys hinzu.",
+    "language": "Alemán",
+    "difficulty": 1,
+    "keywords": ["Vorstellung", "Name", "Alter", "Nationalität", "Beruf", "Hobbys"],
+    "minWords": 30,
+    "maxWords": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "de2",
+    "title": "Mein Tagesablauf",
+    "prompt": "Beschreibe deinen Tagesablauf auf Deutsch. Erwähne, wann du aufstehst, was du zum Frühstück isst, wie du zur Arbeit oder zur Schule gehst und was du am Nachmittag und am Abend machst.",
+    "language": "Alemán",
+    "difficulty": 1,
+    "keywords": ["Tagesablauf", "Morgen", "Nachmittag", "Abend", "Mahlzeiten", "Arbeit"],
+    "minWords": 50,
+    "maxWords": 150,
+    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "de3",
+    "title": "Mein Lieblingsessen",
+    "prompt": "Schreibe über dein Lieblingsessen auf Deutsch. Beschreibe, was es ist, wie es zubereitet wird, warum du es magst und wann du es normalerweise isst.",
+    "language": "Alemán",
+    "difficulty": 1,
+    "keywords": ["Lieblingsessen", "Rezept", "Geschmack", "Restaurant"],
+    "minWords": 40,
+    "maxWords": 120,
+    "imageUrl": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "de4",
+    "title": "Meine Familie",
+    "prompt": "Beschreibe deine Familie auf Deutsch. Erwähne, wie viele Mitglieder es gibt, ihre Namen, ihr Alter, ihre Berufe und deine Beziehung zu ihnen.",
+    "language": "Alemán",
+    "difficulty": 1,
+    "keywords": ["Familie", "Eltern", "Geschwister", "Verwandte", "Beziehung"],
+    "minWords": 50,
+    "maxWords": 150,
+    "imageUrl": "https://images.unsplash.com/photo-1509506489701-dfe23b067808?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "de5",
+    "title": "Meine Stadt",
+    "prompt": "Beschreibe die Stadt, in der du lebst, auf Deutsch. Erwähne, wo sie liegt, wie das Wetter ist, welche interessanten Orte es zu besuchen gibt und was du daran magst, dort zu leben.",
+    "language": "Alemán",
+    "difficulty": 2,
+    "keywords": ["Stadt", "Lage", "Wetter", "Sehenswürdigkeiten", "Leben"],
+    "minWords": 60,
+    "maxWords": 180,
+    "imageUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "de6",
+    "title": "Meine ideale Reise",
+    "prompt": "Beschreibe deine ideale Reise in ein deutschsprachiges Land. Erwähne, welche Städte du besuchen würdest, welche Orte du gerne sehen würdest, welche Speisen du probieren würdest und welche Aktivitäten du unternehmen würdest.",
+    "language": "Alemán",
+    "difficulty": 2,
+    "keywords": ["Reise", "Tourismus", "Orte", "Aktivitäten", "Erfahrung"],
+    "minWords": 80,
+    "maxWords": 200,
+    "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "de7",
+    "title": "Mein Lieblingsfilm",
+    "prompt": "Schreibe über deinen Lieblingsfilm auf Deutsch. Beschreibe die Handlung, die Hauptfiguren, warum du ihn magst und empfehle ihn jemand anderem.",
+    "language": "Alemán",
+    "difficulty": 2,
+    "keywords": ["Film", "Handlung", "Figuren", "Meinung", "Empfehlung"],
+    "minWords": 70,
+    "maxWords": 200,
+    "imageUrl": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "de8",
+    "title": "Mein Hobby",
+    "prompt": "Schreibe über dein Lieblingshobby oder deine Lieblingsbeschäftigung auf Deutsch. Beschreibe, was es beinhaltet, wann du damit angefangen hast, warum du es magst und wie es dich fühlen lässt.",
+    "language": "Alemán",
+    "difficulty": 2,
+    "keywords": ["Hobby", "Aktivität", "Zeit", "Freude", "Erfahrung"],
+    "minWords": 60,
+    "maxWords": 180,
+    "imageUrl": "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "de9",
+    "title": "Ein soziales Problem",
+    "prompt": "Schreibe einen kurzen Aufsatz auf Deutsch über ein soziales Problem, das dich beschäftigt. Beschreibe das Problem, seine Ursachen, Folgen und mögliche Lösungen.",
+    "language": "Alemán",
+    "difficulty": 3,
+    "keywords": ["soziales Problem", "Ursachen", "Folgen", "Lösungen", "Meinung"],
+    "minWords": 100,
+    "maxWords": 250,
+    "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "de10",
+    "title": "Meine Zukunft",
+    "prompt": "Schreibe über deine Pläne und Träume für die Zukunft auf Deutsch. Beschreibe, was du gerne studieren oder arbeiten würdest, wo du gerne leben würdest und welche persönlichen Ziele du hast.",
+    "language": "Alemán",
+    "difficulty": 3,
+    "keywords": ["Zukunft", "Träume", "Ziele", "Pläne", "Hoffnungen"],
+    "minWords": 100,
+    "maxWords": 250,
+    "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  }
+]

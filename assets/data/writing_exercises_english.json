@@ -1,0 +1,112 @@
+[
+  {
+    "id": "en1",
+    "title": "My introduction",
+    "prompt": "Write a brief introduction about yourself in English. Include your name, age, nationality, occupation, and hobbies.",
+    "language": "Inglés",
+    "difficulty": 1,
+    "keywords": ["introduction", "name", "age", "nationality", "occupation", "hobbies"],
+    "minWords": 30,
+    "maxWords": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "en2",
+    "title": "My daily routine",
+    "prompt": "Describe your daily routine in English. Mention what time you wake up, what you have for breakfast, how you go to work or school, and what you do in the afternoon and evening.",
+    "language": "Inglés",
+    "difficulty": 1,
+    "keywords": ["daily routine", "morning", "afternoon", "evening", "meals", "work"],
+    "minWords": 50,
+    "maxWords": 150,
+    "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "en3",
+    "title": "My favorite food",
+    "prompt": "Write about your favorite food in English. Describe what it is, how it's prepared, why you like it, and when you usually eat it.",
+    "language": "Inglés",
+    "difficulty": 1,
+    "keywords": ["favorite food", "recipe", "taste", "restaurant"],
+    "minWords": 40,
+    "maxWords": 120,
+    "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "en4",
+    "title": "My family",
+    "prompt": "Describe your family in English. Mention how many members there are, their names, ages, occupations, and your relationship with them.",
+    "language": "Inglés",
+    "difficulty": 1,
+    "keywords": ["family", "parents", "siblings", "relatives", "relationship"],
+    "minWords": 50,
+    "maxWords": 150,
+    "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "en5",
+    "title": "My city",
+    "prompt": "Describe the city where you live in English. Mention where it's located, what the weather is like, what interesting places there are to visit, and what you like about living there.",
+    "language": "Inglés",
+    "difficulty": 2,
+    "keywords": ["city", "location", "weather", "attractions", "living"],
+    "minWords": 60,
+    "maxWords": 180,
+    "imageUrl": "https://images.unsplash.com/photo-1502899576159-f224dc2349fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "en6",
+    "title": "My ideal trip",
+    "prompt": "Describe your ideal trip to an English-speaking country. Mention which cities you would visit, what places you would like to see, what foods you would try, and what activities you would do.",
+    "language": "Inglés",
+    "difficulty": 2,
+    "keywords": ["travel", "tourism", "places", "activities", "experience"],
+    "minWords": 80,
+    "maxWords": 200,
+    "imageUrl": "https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "en7",
+    "title": "My favorite movie",
+    "prompt": "Write about your favorite movie in English. Describe the plot, the main characters, why you like it, and recommend it to someone else.",
+    "language": "Inglés",
+    "difficulty": 2,
+    "keywords": ["movie", "plot", "characters", "opinion", "recommendation"],
+    "minWords": 70,
+    "maxWords": 200,
+    "imageUrl": "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "en8",
+    "title": "My hobby",
+    "prompt": "Write about your favorite hobby or pastime in English. Describe what it involves, when you started doing it, why you like it, and how it makes you feel.",
+    "language": "Inglés",
+    "difficulty": 2,
+    "keywords": ["hobby", "activity", "time", "enjoyment", "experience"],
+    "minWords": 60,
+    "maxWords": 180,
+    "imageUrl": "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "en9",
+    "title": "A social issue",
+    "prompt": "Write a short essay in English about a social issue that concerns you. Describe the problem, its causes, consequences, and possible solutions.",
+    "language": "Inglés",
+    "difficulty": 3,
+    "keywords": ["social issue", "causes", "consequences", "solutions", "opinion"],
+    "minWords": 100,
+    "maxWords": 250,
+    "imageUrl": "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "en10",
+    "title": "My future",
+    "prompt": "Write about your plans and dreams for the future in English. Describe what you would like to study or work in, where you would like to live, and what personal goals you have.",
+    "language": "Inglés",
+    "difficulty": 3,
+    "keywords": ["future", "dreams", "goals", "plans", "hopes"],
+    "minWords": 100,
+    "maxWords": 250,
+    "imageUrl": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  }
+]

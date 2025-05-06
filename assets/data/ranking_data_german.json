@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Patricia Flores",
+    "points": 1100,
+    "level": 7,
+    "streak": 14,
+    "avatarUrl": "https://randomuser.me/api/portraits/women/5.jpg",
+    "language": "Alemán"
+  },
+  {
+    "name": "Eduardo Vargas",
+    "points": 980,
+    "level": 7,
+    "streak": 12,
+    "avatarUrl": "https://randomuser.me/api/portraits/men/7.jpg",
+    "language": "Alemán"
+  },
+  {
+    "name": "Mónica Reyes",
+    "points": 860,
+    "level": 6,
+    "streak": 10,
+    "avatarUrl": "https://randomuser.me/api/portraits/women/9.jpg",
+    "language": "Alemán"
+  },
+  {
+    "name": "Gabriel Ortega",
+    "points": 770,
+    "level": 5,
+    "streak": 8,
+    "avatarUrl": "https://randomuser.me/api/portraits/men/1.jpg",
+    "language": "Alemán"
+  },
+  {
+    "name": "Adriana Medina",
+    "points": 700,
+    "level": 5,
+    "streak": 7,
+    "avatarUrl": "https://randomuser.me/api/portraits/women/3.jpg",
+    "language": "Alemán"
+  },
+  {
+    "name": "Ricardo Herrera",
+    "points": 630,
+    "level": 4,
+    "streak": 6,
+    "avatarUrl": "https://randomuser.me/api/portraits/men/5.jpg",
+    "language": "Alemán"
+  },
+  {
+    "name": "Lorena Campos",
+    "points": 560,
+    "level": 4,
+    "streak": 5,
+    "avatarUrl": "https://randomuser.me/api/portraits/women/7.jpg",
+    "language": "Alemán"
+  },
+  {
+    "name": "Víctor Rivas",
+    "points": 500,
+    "level": 3,
+    "streak": 4,
+    "avatarUrl": "https://randomuser.me/api/portraits/men/9.jpg",
+    "language": "Alemán"
+  },
+  {
+    "name": "Claudia Molina",
+    "points": 440,
+    "level": 3,
+    "streak": 3,
+    "avatarUrl": "https://randomuser.me/api/portraits/women/2.jpg",
+    "language": "Alemán"
+  },
+  {
+    "name": "Óscar Delgado",
+    "points": 370,
+    "level": 2,
+    "streak": 2,
+    "avatarUrl": "https://randomuser.me/api/portraits/men/4.jpg",
+    "language": "Alemán"
+  }
+]

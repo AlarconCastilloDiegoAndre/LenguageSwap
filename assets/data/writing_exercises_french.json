@@ -1,0 +1,112 @@
+[
+  {
+    "id": "fr1",
+    "title": "Ma présentation",
+    "prompt": "Écris une brève présentation de toi-même en français. Inclus ton nom, ton âge, ta nationalité, ton occupation et tes loisirs.",
+    "language": "Francés",
+    "difficulty": 1,
+    "keywords": ["présentation", "nom", "âge", "nationalité", "occupation", "loisirs"],
+    "minWords": 30,
+    "maxWords": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "fr2",
+    "title": "Ma routine quotidienne",
+    "prompt": "Décris ta routine quotidienne en français. Mentionne à quelle heure tu te réveilles, ce que tu prends au petit-déjeuner, comment tu vas au travail ou à l'école, et ce que tu fais l'après-midi et le soir.",
+    "language": "Francés",
+    "difficulty": 1,
+    "keywords": ["routine quotidienne", "matin", "après-midi", "soir", "repas", "travail"],
+    "minWords": 50,
+    "maxWords": 150,
+    "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "fr3",
+    "title": "Mon plat préféré",
+    "prompt": "Écris sur ton plat préféré en français. Décris ce que c'est, comment il est préparé, pourquoi tu l'aimes et quand tu le manges habituellement.",
+    "language": "Francés",
+    "difficulty": 1,
+    "keywords": ["plat préféré", "recette", "goût", "restaurant"],
+    "minWords": 40,
+    "maxWords": 120,
+    "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "fr4",
+    "title": "Ma famille",
+    "prompt": "Décris ta famille en français. Mentionne combien de membres il y a, leurs noms, leurs âges, leurs occupations et ta relation avec eux.",
+    "language": "Francés",
+    "difficulty": 1,
+    "keywords": ["famille", "parents", "frères et sœurs", "proches", "relation"],
+    "minWords": 50,
+    "maxWords": 150,
+    "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "fr5",
+    "title": "Ma ville",
+    "prompt": "Décris la ville où tu habites en français. Mentionne où elle est située, quel est le climat, quels endroits intéressants il y a à visiter et ce que tu aimes dans le fait d'y vivre.",
+    "language": "Francés",
+    "difficulty": 2,
+    "keywords": ["ville", "emplacement", "climat", "attractions", "vie"],
+    "minWords": 60,
+    "maxWords": 180,
+    "imageUrl": "https://images.unsplash.com/photo-1502899576159-f224dc2349fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "fr6",
+    "title": "Mon voyage idéal",
+    "prompt": "Décris ton voyage idéal dans un pays francophone. Mentionne quelles villes tu visiterais, quels endroits tu aimerais voir, quels plats tu essaierais et quelles activités tu ferais.",
+    "language": "Francés",
+    "difficulty": 2,
+    "keywords": ["voyage", "tourisme", "lieux", "activités", "expérience"],
+    "minWords": 80,
+    "maxWords": 200,
+    "imageUrl": "https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "fr7",
+    "title": "Mon film préféré",
+    "prompt": "Écris sur ton film préféré en français. Décris l'intrigue, les personnages principaux, pourquoi tu l'aimes et recommande-le à quelqu'un d'autre.",
+    "language": "Francés",
+    "difficulty": 2,
+    "keywords": ["film", "intrigue", "personnages", "opinion", "recommandation"],
+    "minWords": 70,
+    "maxWords": 200,
+    "imageUrl": "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "fr8",
+    "title": "Mon passe-temps",
+    "prompt": "Écris sur ton passe-temps ou hobby préféré en français. Décris en quoi il consiste, quand tu as commencé à le pratiquer, pourquoi tu l'aimes et comment il te fait sentir.",
+    "language": "Francés",
+    "difficulty": 2,
+    "keywords": ["passe-temps", "activité", "temps", "plaisir", "expérience"],
+    "minWords": 60,
+    "maxWords": 180,
+    "imageUrl": "https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "fr9",
+    "title": "Un problème social",
+    "prompt": "Écris un court essai en français sur un problème social qui te préoccupe. Décris le problème, ses causes, ses conséquences et les solutions possibles.",
+    "language": "Francés",
+    "difficulty": 3,
+    "keywords": ["problème social", "causes", "conséquences", "solutions", "opinion"],
+    "minWords": 100,
+    "maxWords": 250,
+    "imageUrl": "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "fr10",
+    "title": "Mon avenir",
+    "prompt": "Écris sur tes projets et tes rêves pour l'avenir en français. Décris ce que tu aimerais étudier ou dans quoi tu aimerais travailler, où tu aimerais vivre et quels objectifs personnels tu as.",
+    "language": "Francés",
+    "difficulty": 3,
+    "keywords": ["avenir", "rêves", "objectifs", "projets", "espoirs"],
+    "minWords": 100,
+    "maxWords": 250,
+    "imageUrl": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Raquel Jiménez",
+    "points": 1050,
+    "level": 7,
+    "streak": 13,
+    "avatarUrl": "assets/images/avatars/avatar6.png",
+    "language": "Italiano"
+  },
+  {
+    "name": "Alberto Muñoz",
+    "points": 940,
+    "level": 6,
+    "streak": 11,
+    "avatarUrl": "assets/images/avatars/avatar8.png",
+    "language": "Italiano"
+  },
+  {
+    "name": "Nuria Vázquez",
+    "points": 830,
+    "level": 6,
+    "streak": 9,
+    "avatarUrl": "assets/images/avatars/avatar10.png",
+    "language": "Italiano"
+  },
+  {
+    "name": "Javier Serrano",
+    "points": 730,
+    "level": 5,
+    "streak": 7,
+    "avatarUrl": "assets/images/avatars/avatar2.png",
+    "language": "Italiano"
+  },
+  {
+    "name": "Sonia Morales",
+    "points": 680,
+    "level": 4,
+    "streak": 6,
+    "avatarUrl": "assets/images/avatars/avatar4.png",
+    "language": "Italiano"
+  },
+  {
+    "name": "Marcos Romero",
+    "points": 610,
+    "level": 4,
+    "streak": 5,
+    "avatarUrl": "assets/images/avatars/avatar6.png",
+    "language": "Italiano"
+  },
+  {
+    "name": "Lucía Sanz",
+    "points": 550,
+    "level": 3,
+    "streak": 4,
+    "avatarUrl": "assets/images/avatars/avatar8.png",
+    "language": "Italiano"
+  },
+  {
+    "name": "Andrés Castillo",
+    "points": 480,
+    "level": 3,
+    "streak": 3,
+    "avatarUrl": "assets/images/avatars/avatar10.png",
+    "language": "Italiano"
+  },
+  {
+    "name": "Marina Blanco",
+    "points": 420,
+    "level": 2,
+    "streak": 2,
+    "avatarUrl": "assets/images/avatars/avatar1.png",
+    "language": "Italiano"
+  },
+  {
+    "name": "Rubén Guerrero",
+    "points": 360,
+    "level": 2,
+    "streak": 1,
+    "avatarUrl": "assets/images/avatars/avatar3.png",
+    "language": "Italiano"
+  }
+]

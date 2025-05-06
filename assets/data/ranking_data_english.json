@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Roberto Méndez",
+    "points": 1320,
+    "level": 9,
+    "streak": 18,
+    "avatarUrl": "assets/images/avatars/avatar3.png",
+    "language": "Inglés"
+  },
+  {
+    "name": "Lucía Fernández",
+    "points": 1150,
+    "level": 8,
+    "streak": 14,
+    "avatarUrl": "assets/images/avatars/avatar5.png",
+    "language": "Inglés"
+  },
+  {
+    "name": "Javier Morales",
+    "points": 950,
+    "level": 7,
+    "streak": 10,
+    "avatarUrl": "assets/images/avatars/avatar1.png",
+    "language": "Inglés"
+  },
+  {
+    "name": "Carmen Vega",
+    "points": 820,
+    "level": 6,
+    "streak": 8,
+    "avatarUrl": "assets/images/avatars/avatar7.png",
+    "language": "Inglés"
+  },
+  {
+    "name": "Alejandro Ramos",
+    "points": 780,
+    "level": 5,
+    "streak": 7,
+    "avatarUrl": "assets/images/avatars/avatar2.png",
+    "language": "Inglés"
+  },
+  {
+    "name": "Isabel Torres",
+    "points": 690,
+    "level": 5,
+    "streak": 6,
+    "avatarUrl": "assets/images/avatars/avatar9.png",
+    "language": "Inglés"
+  },
+  {
+    "name": "Daniel Ortiz",
+    "points": 610,
+    "level": 4,
+    "streak": 5,
+    "avatarUrl": "assets/images/avatars/avatar4.png",
+    "language": "Inglés"
+  },
+  {
+    "name": "Natalia Herrera",
+    "points": 540,
+    "level": 3,
+    "streak": 4,
+    "avatarUrl": "assets/images/avatars/avatar6.png",
+    "language": "Inglés"
+  },
+  {
+    "name": "Pablo Jiménez",
+    "points": 470,
+    "level": 3,
+    "streak": 3,
+    "avatarUrl": "assets/images/avatars/avatar8.png",
+    "language": "Inglés"
+  },
+  {
+    "name": "Marta Soto",
+    "points": 410,
+    "level": 2,
+    "streak": 2,
+    "avatarUrl": "assets/images/avatars/avatar10.png",
+    "language": "Inglés"
+  }
+]

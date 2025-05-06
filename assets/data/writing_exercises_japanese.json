@@ -1,0 +1,35 @@
+[
+  {
+    "id": "jp1",
+    "title": "自己紹介",
+    "prompt": "簡単な自己紹介を書いてください。名前、年齢、趣味などを含めてください。",
+    "language": "Japonés",
+    "difficulty": 1,
+    "keywords": ["名前", "年齢", "趣味"],
+    "minWords": 30,
+    "maxWords": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "jp2",
+    "title": "私の一日",
+    "prompt": "あなたの典型的な一日について書いてください。朝起きてから夜寝るまでの活動を説明してください。",
+    "language": "Japonés",
+    "difficulty": 1,
+    "keywords": ["朝", "昼", "夜", "活動"],
+    "minWords": 50,
+    "maxWords": 150,
+    "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "jp3",
+    "title": "私の好きな食べ物",
+    "prompt": "あなたの好きな食べ物について書いてください。なぜそれが好きなのか、どのように調理されるのかを説明してください。",
+    "language": "Japonés",
+    "difficulty": 2,
+    "keywords": ["食べ物", "料理", "味"],
+    "minWords": 60,
+    "maxWords": 180,
+    "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  }
+]

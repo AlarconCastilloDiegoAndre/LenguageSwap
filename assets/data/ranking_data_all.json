@@ -1,0 +1,82 @@
+[
+  {
+    "name": "María García",
+    "points": 1250,
+    "level": 8,
+    "streak": 15,
+    "avatarUrl": "assets/images/avatars/avatar1.png",
+    "language": "Japonés"
+  },
+  {
+    "name": "Roberto Méndez",
+    "points": 1320,
+    "level": 9,
+    "streak": 18,
+    "avatarUrl": "assets/images/avatars/avatar3.png",
+    "language": "Inglés"
+  },
+  {
+    "name": "Diego Martín",
+    "points": 1180,
+    "level": 8,
+    "streak": 16,
+    "avatarUrl": "assets/images/avatars/avatar2.png",
+    "language": "Francés"
+  },
+  {
+    "name": "Patricia Flores",
+    "points": 1100,
+    "level": 7,
+    "streak": 14,
+    "avatarUrl": "assets/images/avatars/avatar5.png",
+    "language": "Alemán"
+  },
+  {
+    "name": "Raquel Jiménez",
+    "points": 1050,
+    "level": 7,
+    "streak": 13,
+    "avatarUrl": "assets/images/avatars/avatar6.png",
+    "language": "Italiano"
+  },
+  {
+    "name": "Carlos Rodríguez",
+    "points": 980,
+    "level": 7,
+    "streak": 12,
+    "avatarUrl": "assets/images/avatars/avatar2.png",
+    "language": "Japonés"
+  },
+  {
+    "name": "Lucía Fernández",
+    "points": 1150,
+    "level": 8,
+    "streak": 14,
+    "avatarUrl": "assets/images/avatars/avatar5.png",
+    "language": "Inglés"
+  },
+  {
+    "name": "Valeria Gómez",
+    "points": 1050,
+    "level": 7,
+    "streak": 13,
+    "avatarUrl": "assets/images/avatars/avatar4.png",
+    "language": "Francés"
+  },
+  {
+    "name": "Eduardo Vargas",
+    "points": 980,
+    "level": 7,
+    "streak": 12,
+    "avatarUrl": "assets/images/avatars/avatar7.png",
+    "language": "Alemán"
+  },
+  {
+    "name": "Alberto Muñoz",
+    "points": 940,
+    "level": 6,
+    "streak": 11,
+    "avatarUrl": "assets/images/avatars/avatar8.png",
+    "language": "Italiano"
+  }
+]

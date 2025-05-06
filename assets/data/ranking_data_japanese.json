@@ -1,0 +1,82 @@
+[
+  {
+    "name": "María García",
+    "points": 1250,
+    "level": 8,
+    "streak": 15,
+    "avatarUrl": "assets/images/avatars/avatar1.png",
+    "language": "Japonés"
+  },
+  {
+    "name": "Carlos Rodríguez",
+    "points": 980,
+    "level": 7,
+    "streak": 12,
+    "avatarUrl": "assets/images/avatars/avatar2.png",
+    "language": "Japonés"
+  },
+  {
+    "name": "Ana López",
+    "points": 870,
+    "level": 6,
+    "streak": 9,
+    "avatarUrl": "assets/images/avatars/avatar3.png",
+    "language": "Japonés"
+  },
+  {
+    "name": "Juan Martínez",
+    "points": 750,
+    "level": 5,
+    "streak": 7,
+    "avatarUrl": "assets/images/avatars/avatar4.png",
+    "language": "Japonés"
+  },
+  {
+    "name": "Laura Sánchez",
+    "points": 720,
+    "level": 5,
+    "streak": 6,
+    "avatarUrl": "assets/images/avatars/avatar5.png",
+    "language": "Japonés"
+  },
+  {
+    "name": "Pedro Fernández",
+    "points": 650,
+    "level": 4,
+    "streak": 5,
+    "avatarUrl": "assets/images/avatars/avatar6.png",
+    "language": "Japonés"
+  },
+  {
+    "name": "Sofía Díaz",
+    "points": 580,
+    "level": 4,
+    "streak": 4,
+    "avatarUrl": "assets/images/avatars/avatar7.png",
+    "language": "Japonés"
+  },
+  {
+    "name": "Miguel Torres",
+    "points": 520,
+    "level": 3,
+    "streak": 3,
+    "avatarUrl": "assets/images/avatars/avatar8.png",
+    "language": "Japonés"
+  },
+  {
+    "name": "Elena Ruiz",
+    "points": 450,
+    "level": 3,
+    "streak": 2,
+    "avatarUrl": "assets/images/avatars/avatar9.png",
+    "language": "Japonés"
+  },
+  {
+    "name": "David Gómez",
+    "points": 380,
+    "level": 2,
+    "streak": 1,
+    "avatarUrl": "assets/images/avatars/avatar10.png",
+    "language": "Japonés"
+  }
+]

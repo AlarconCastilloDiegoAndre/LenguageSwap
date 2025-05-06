@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Diego Martín",
+    "points": 1180,
+    "level": 8,
+    "streak": 16,
+    "avatarUrl": "assets/images/avatars/avatar2.png",
+    "language": "Francés"
+  },
+  {
+    "name": "Valeria Gómez",
+    "points": 1050,
+    "level": 7,
+    "streak": 13,
+    "avatarUrl": "assets/images/avatars/avatar4.png",
+    "language": "Francés"
+  },
+  {
+    "name": "Sergio López",
+    "points": 920,
+    "level": 6,
+    "streak": 11,
+    "avatarUrl": "assets/images/avatars/avatar6.png",
+    "language": "Francés"
+  },
+  {
+    "name": "Alicia Rodríguez",
+    "points": 800,
+    "level": 5,
+    "streak": 9,
+    "avatarUrl": "assets/images/avatars/avatar8.png",
+    "language": "Francés"
+  },
+  {
+    "name": "Raúl Sánchez",
+    "points": 740,
+    "level": 5,
+    "streak": 8,
+    "avatarUrl": "assets/images/avatars/avatar10.png",
+    "language": "Francés"
+  },
+  {
+    "name": "Cristina Díaz",
+    "points": 670,
+    "level": 4,
+    "streak": 7,
+    "avatarUrl": "assets/images/avatars/avatar1.png",
+    "language": "Francés"
+  },
+  {
+    "name": "Fernando Ruiz",
+    "points": 590,
+    "level": 4,
+    "streak": 6,
+    "avatarUrl": "assets/images/avatars/avatar3.png",
+    "language": "Francés"
+  },
+  {
+    "name": "Beatriz Moreno",
+    "points": 530,
+    "level": 3,
+    "streak": 5,
+    "avatarUrl": "assets/images/avatars/avatar5.png",
+    "language": "Francés"
+  },
+  {
+    "name": "Héctor Navarro",
+    "points": 460,
+    "level": 3,
+    "streak": 4,
+    "avatarUrl": "assets/images/avatars/avatar7.png",
+    "language": "Francés"
+  },
+  {
+    "name": "Silvia Castro",
+    "points": 390,
+    "level": 2,
+    "streak": 3,
+    "avatarUrl": "assets/images/avatars/avatar9.png",
+    "language": "Francés"
+  }
+]
